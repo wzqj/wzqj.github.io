@@ -1,0 +1,26 @@
+body {
+    font-family: Nunito, sans-serif;
+    background-color: pink;
+    color: red;
+}
+
+.navbar {
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    color: red;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.topcandy {
+    font-size: 2rem;
+}
+
