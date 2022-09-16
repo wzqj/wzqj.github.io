@@ -40,6 +40,8 @@ resetBtn.addEventListener('click', function (e) {
     p2PointBtn.score = 0;
     p1Score.innerText = `${p1PointBtn.score}`;
     p2Score.innerText = `${p2PointBtn.score}`;
+    p1Score.style.color = 'black';
+    p2Score.style.color = 'black';
     p1PointBtn.disabled = false;
     p2PointBtn.disabled = false;
 });
