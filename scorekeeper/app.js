@@ -1,17 +1,17 @@
 function addPoint() {
     this.score += 1;
     scoreboard.innerText = `${p1PointBtn.score} to ${p2PointBtn.score}`;
-    if (p1PointBtn.score >= parseInt(maxScore) || p2PointBtn.score >= parseInt(maxScore)) {
+    if (p1PointBtn.score >= maxScore || p2PointBtn.score >= maxScore) {
         p1PointBtn.disabled = true;
         p2PointBtn.disabled = true;
     }
 }
 
 const select = document.querySelector('select');
-let maxScore = select.value;
+let maxScore = parseInt(select.value);
 
 select.addEventListener('change', (e) => {
-    maxScore = select.value;
+    maxScore = parseInt(select.value);
 });
 
 const scoreboard = document.querySelector('h1');
